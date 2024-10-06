@@ -1,0 +1,74 @@
+@import "variables";
+
+@mixin animationTest($property, $property2, $duration, $color) {
+  transition: $property $duration;
+  animation-duration: $duration;
+  color: $color;
+}
+@function fun($size) {
+  @return $size + 10;
+}
+h1 {
+  color: $textMainColor;
+}
+.desc {
+  color: $textMainColor;
+  size: fun(30) px;
+}
+
+.parent {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  //   &:hover {
+  //     background-color: $BgMainColor;
+  //   }
+  .child1 {
+    background-color: #ddd;
+    font: {
+      size: 17px;
+      weight: bold;
+      style: italic;
+    }
+    background: {
+      image: url();
+      repeat: no-repeat;
+      size: cover;
+      position: center;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+  .child2 {
+    color: pink;
+  }
+  .child3 {
+  }
+  @for $i from 1 to 8 {
+    .child#{$i} {
+      @if ($i==5) {
+        color: red;
+      }
+      background-color: rgba($color: $BgMainColor, $alpha: $i/7);
+      width: 200px + ($i * 50);
+    }
+  }
+}
+
+.skills {
+  margin-top: 1rem;
+  .card {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    @include animationTest(all, 1s);
+  }
+  .test {
+    color: red;
+    margin-top: 1rem;
+    @extend .card;
+    @include animationTest(all, 3s, red);
+  }
+}

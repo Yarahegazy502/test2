@@ -1,0 +1,74 @@
+h1 {
+  color: darkBlue;
+}
+
+.desc {
+  color: darkBlue;
+}
+
+.parent {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+.parent .child1 {
+  background-color: #ddd;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: italic;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.parent .child1:hover {
+  color: #fff;
+}
+.parent .child2 {
+  color: pink;
+}
+.parent .child1 {
+  background-color: rgba(0, 0, 139, 0.1428571429);
+  width: 250px;
+}
+.parent .child2 {
+  background-color: rgba(0, 0, 139, 0.2857142857);
+  width: 300px;
+}
+.parent .child3 {
+  background-color: rgba(0, 0, 139, 0.4285714286);
+  width: 350px;
+}
+.parent .child4 {
+  background-color: rgba(0, 0, 139, 0.5714285714);
+  width: 400px;
+}
+.parent .child5 {
+  background-color: rgba(0, 0, 139, 0.7142857143);
+  width: 450px;
+}
+.parent .child6 {
+  background-color: rgba(0, 0, 139, 0.8571428571);
+  width: 500px;
+}
+.parent .child7 {
+  background-color: darkblue;
+  width: 550px;
+}
+
+.skills {
+  margin-top: 1rem;
+}
+.skills .card, .skills .test {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 1s;
+  animation-duration: 1s;
+}
+.skills .test {
+  color: red;
+  margin-top: 1rem;
+  transition: all 3s;
+  animation-duration: 3s;
+}/*# sourceMappingURL=style.css.map */
