@@ -68,6 +68,7 @@ h1 {
   .test {
     color: red;
     margin-top: 1rem;
+    margin-top: 1rem;
     @extend .card;
     @include animationTest(all, 3s, red);
   }
